@@ -1,0 +1,850 @@
+[
+  {
+    "name": "RPL",
+    "x": 8524,
+    "time": 24.47,
+    "won": true,
+    "is_ai": true,
+    "date": "2026-05-24 19:49"
+  },
+  {
+    "name": "IA",
+    "x": 8510,
+    "time": 24.55,
+    "won": true,
+    "is_ai": true,
+    "date": "2026-05-26 11:34"
+  },
+  {
+    "name": "IA",
+    "x": 8524,
+    "time": 24.58,
+    "won": true,
+    "is_ai": true,
+    "date": "2026-05-26 08:46"
+  },
+  {
+    "name": "IA",
+    "x": 8510,
+    "time": 24.59,
+    "won": true,
+    "is_ai": true,
+    "date": "2026-05-27 09:32"
+  },
+  {
+    "name": "IA",
+    "x": 8510,
+    "time": 24.61,
+    "won": true,
+    "is_ai": true,
+    "date": "2026-05-26 08:45"
+  },
+  {
+    "name": "IA",
+    "x": 8524,
+    "time": 24.63,
+    "won": true,
+    "is_ai": true,
+    "date": "2026-05-26 11:34"
+  },
+  {
+    "name": "IA",
+    "x": 8524,
+    "time": 24.69,
+    "won": true,
+    "is_ai": true,
+    "date": "2026-05-27 09:32"
+  },
+  {
+    "name": "IA",
+    "x": 8510,
+    "time": 25.4,
+    "won": true,
+    "is_ai": true,
+    "date": "2026-05-27 09:31"
+  },
+  {
+    "name": "IA",
+    "x": 8510,
+    "time": 25.44,
+    "won": true,
+    "is_ai": true,
+    "date": "2026-05-26 11:33"
+  },
+  {
+    "name": "IA",
+    "x": 8510,
+    "time": 25.46,
+    "won": true,
+    "is_ai": true,
+    "date": "2026-05-26 08:45"
+  },
+  {
+    "name": "RPL",
+    "x": 8510,
+    "time": 27.82,
+    "won": true,
+    "is_ai": true,
+    "date": "2026-05-24 19:13"
+  },
+  {
+    "name": "RPL",
+    "x": 8510,
+    "time": 27.85,
+    "won": true,
+    "is_ai": true,
+    "date": "2026-05-24 19:51"
+  },
+  {
+    "name": "SEB",
+    "x": 8510,
+    "time": 32.51,
+    "won": true,
+    "is_ai": false,
+    "date": "2026-05-26 11:37"
+  },
+  {
+    "name": "CAS",
+    "x": 8507,
+    "time": 35.71,
+    "won": true,
+    "is_ai": false,
+    "date": "2026-05-27 09:33"
+  },
+  {
+    "name": "CAR",
+    "x": 8528,
+    "time": 38.09,
+    "won": true,
+    "is_ai": false,
+    "date": "2026-05-24 19:10"
+  },
+  {
+    "name": "MAS",
+    "x": 8510,
+    "time": 55.12,
+    "won": true,
+    "is_ai": false,
+    "date": "2026-05-26 08:49"
+  },
+  {
+    "name": " IA",
+    "x": 5357,
+    "time": 13.17,
+    "won": false,
+    "is_ai": true,
+    "date": "2026-05-24 19:03"
+  },
+  {
+    "name": "IA",
+    "x": 4764,
+    "time": 7.96,
+    "won": false,
+    "is_ai": true,
+    "date": "2026-05-26 08:44"
+  },
+  {
+    "name": "IA",
+    "x": 4764,
+    "time": 8.0,
+    "won": false,
+    "is_ai": true,
+    "date": "2026-05-26 11:33"
+  },
+  {
+    "name": "IA",
+    "x": 4764,
+    "time": 7.96,
+    "won": false,
+    "is_ai": true,
+    "date": "2026-05-27 09:31"
+  },
+  {
+    "name": "IA",
+    "x": 4743,
+    "time": 9.97,
+    "won": false,
+    "is_ai": true,
+    "date": "2026-05-26 08:44"
+  },
+  {
+    "name": "IA",
+    "x": 4743,
+    "time": 9.96,
+    "won": false,
+    "is_ai": true,
+    "date": "2026-05-26 11:32"
+  },
+  {
+    "name": "IA",
+    "x": 4743,
+    "time": 10.0,
+    "won": false,
+    "is_ai": true,
+    "date": "2026-05-27 09:31"
+  },
+  {
+    "name": "IA",
+    "x": 4739,
+    "time": 12.76,
+    "won": false,
+    "is_ai": true,
+    "date": "2026-05-26 08:44"
+  },
+  {
+    "name": "IA",
+    "x": 4739,
+    "time": 12.7,
+    "won": false,
+    "is_ai": true,
+    "date": "2026-05-26 11:32"
+  },
+  {
+    "name": "IA",
+    "x": 4739,
+    "time": 12.69,
+    "won": false,
+    "is_ai": true,
+    "date": "2026-05-27 09:30"
+  },
+  {
+    "name": "LIN",
+    "x": 4728,
+    "time": 9.1,
+    "won": false,
+    "is_ai": false,
+    "date": "2026-05-24 22:07"
+  },
+  {
+    "name": "JOS",
+    "x": 4437,
+    "time": 8.76,
+    "won": false,
+    "is_ai": false,
+    "date": "2026-05-24 22:08"
+  },
+  {
+    "name": "IA",
+    "x": 4091,
+    "time": 18.91,
+    "won": false,
+    "is_ai": true,
+    "date": "2026-05-26 08:43"
+  },
+  {
+    "name": "IA",
+    "x": 4091,
+    "time": 18.8,
+    "won": false,
+    "is_ai": true,
+    "date": "2026-05-26 11:32"
+  },
+  {
+    "name": "IA",
+    "x": 4091,
+    "time": 18.82,
+    "won": false,
+    "is_ai": true,
+    "date": "2026-05-27 09:30"
+  },
+  {
+    "name": "IA",
+    "x": 4036,
+    "time": 14.35,
+    "won": false,
+    "is_ai": true,
+    "date": "2026-05-26 08:43"
+  },
+  {
+    "name": "IA",
+    "x": 4036,
+    "time": 14.36,
+    "won": false,
+    "is_ai": true,
+    "date": "2026-05-26 11:32"
+  },
+  {
+    "name": "IA",
+    "x": 4036,
+    "time": 14.37,
+    "won": false,
+    "is_ai": true,
+    "date": "2026-05-27 09:30"
+  },
+  {
+    "name": " IA",
+    "x": 4030,
+    "time": 13.73,
+    "won": false,
+    "is_ai": true,
+    "date": "2026-05-24 19:03"
+  },
+  {
+    "name": " IA",
+    "x": 3790,
+    "time": 11.06,
+    "won": false,
+    "is_ai": true,
+    "date": "2026-05-24 19:05"
+  },
+  {
+    "name": " IA",
+    "x": 3789,
+    "time": 14.5,
+    "won": false,
+    "is_ai": true,
+    "date": "2026-05-24 19:04"
+  },
+  {
+    "name": " IA",
+    "x": 3789,
+    "time": 14.24,
+    "won": false,
+    "is_ai": true,
+    "date": "2026-05-24 19:10"
+  },
+  {
+    "name": "DAN",
+    "x": 3779,
+    "time": 15.18,
+    "won": false,
+    "is_ai": false,
+    "date": "2026-05-26 11:36"
+  },
+  {
+    "name": " IA",
+    "x": 3361,
+    "time": 11.83,
+    "won": false,
+    "is_ai": true,
+    "date": "2026-05-24 19:06"
+  },
+  {
+    "name": " IA",
+    "x": 3019,
+    "time": 9.98,
+    "won": false,
+    "is_ai": true,
+    "date": "2026-05-24 19:05"
+  },
+  {
+    "name": " IA",
+    "x": 3018,
+    "time": 12.99,
+    "won": false,
+    "is_ai": true,
+    "date": "2026-05-24 19:03"
+  },
+  {
+    "name": " IA",
+    "x": 3018,
+    "time": 9.05,
+    "won": false,
+    "is_ai": true,
+    "date": "2026-05-24 19:03"
+  },
+  {
+    "name": " IA",
+    "x": 3018,
+    "time": 7.01,
+    "won": false,
+    "is_ai": true,
+    "date": "2026-05-24 19:04"
+  },
+  {
+    "name": " IA",
+    "x": 3018,
+    "time": 6.19,
+    "won": false,
+    "is_ai": true,
+    "date": "2026-05-24 19:05"
+  },
+  {
+    "name": " IA",
+    "x": 3018,
+    "time": 9.12,
+    "won": false,
+    "is_ai": true,
+    "date": "2026-05-24 19:06"
+  },
+  {
+    "name": " IA",
+    "x": 3018,
+    "time": 7.49,
+    "won": false,
+    "is_ai": true,
+    "date": "2026-05-24 19:06"
+  },
+  {
+    "name": " IA",
+    "x": 3018,
+    "time": 9.41,
+    "won": false,
+    "is_ai": true,
+    "date": "2026-05-24 19:07"
+  },
+  {
+    "name": " IA",
+    "x": 3018,
+    "time": 12.58,
+    "won": false,
+    "is_ai": true,
+    "date": "2026-05-24 19:10"
+  },
+  {
+    "name": " IA",
+    "x": 3018,
+    "time": 12.89,
+    "won": false,
+    "is_ai": true,
+    "date": "2026-05-24 19:11"
+  },
+  {
+    "name": "LIS",
+    "x": 3018,
+    "time": 13.57,
+    "won": false,
+    "is_ai": false,
+    "date": "2026-05-24 22:06"
+  },
+  {
+    "name": "IA",
+    "x": 3018,
+    "time": 8.87,
+    "won": false,
+    "is_ai": true,
+    "date": "2026-05-26 08:43"
+  },
+  {
+    "name": "IA",
+    "x": 3018,
+    "time": 8.86,
+    "won": false,
+    "is_ai": true,
+    "date": "2026-05-26 11:31"
+  },
+  {
+    "name": "IA",
+    "x": 3018,
+    "time": 8.84,
+    "won": false,
+    "is_ai": true,
+    "date": "2026-05-27 09:29"
+  },
+  {
+    "name": " IA",
+    "x": 3006,
+    "time": 14.33,
+    "won": false,
+    "is_ai": true,
+    "date": "2026-05-24 19:04"
+  },
+  {
+    "name": " IA",
+    "x": 2325,
+    "time": 8.28,
+    "won": false,
+    "is_ai": true,
+    "date": "2026-05-24 19:05"
+  },
+  {
+    "name": " IA",
+    "x": 2316,
+    "time": 8.83,
+    "won": false,
+    "is_ai": true,
+    "date": "2026-05-24 19:04"
+  },
+  {
+    "name": "DAN",
+    "x": 2235,
+    "time": 11.73,
+    "won": false,
+    "is_ai": false,
+    "date": "2026-05-26 11:36"
+  },
+  {
+    "name": " IA",
+    "x": 2223,
+    "time": 8.81,
+    "won": false,
+    "is_ai": true,
+    "date": "2026-05-24 19:03"
+  },
+  {
+    "name": " IA",
+    "x": 1943,
+    "time": 6.78,
+    "won": false,
+    "is_ai": true,
+    "date": "2026-05-24 19:02"
+  },
+  {
+    "name": " IA",
+    "x": 1943,
+    "time": 5.77,
+    "won": false,
+    "is_ai": true,
+    "date": "2026-05-24 19:03"
+  },
+  {
+    "name": " IA",
+    "x": 1943,
+    "time": 5.12,
+    "won": false,
+    "is_ai": true,
+    "date": "2026-05-24 19:05"
+  },
+  {
+    "name": " IA",
+    "x": 1943,
+    "time": 6.71,
+    "won": false,
+    "is_ai": true,
+    "date": "2026-05-24 19:05"
+  },
+  {
+    "name": " IA",
+    "x": 1943,
+    "time": 7.93,
+    "won": false,
+    "is_ai": true,
+    "date": "2026-05-24 19:11"
+  },
+  {
+    "name": "IA",
+    "x": 1943,
+    "time": 6.64,
+    "won": false,
+    "is_ai": true,
+    "date": "2026-05-26 08:43"
+  },
+  {
+    "name": "IA",
+    "x": 1943,
+    "time": 6.67,
+    "won": false,
+    "is_ai": true,
+    "date": "2026-05-26 11:31"
+  },
+  {
+    "name": "IA",
+    "x": 1943,
+    "time": 6.65,
+    "won": false,
+    "is_ai": true,
+    "date": "2026-05-27 09:29"
+  },
+  {
+    "name": " IA",
+    "x": 1900,
+    "time": 7.31,
+    "won": false,
+    "is_ai": true,
+    "date": "2026-05-24 19:07"
+  },
+  {
+    "name": "DAN",
+    "x": 1895,
+    "time": 6.87,
+    "won": false,
+    "is_ai": false,
+    "date": "2026-05-26 11:36"
+  },
+  {
+    "name": "IA",
+    "x": 1861,
+    "time": 6.88,
+    "won": false,
+    "is_ai": true,
+    "date": "2026-05-26 08:42"
+  },
+  {
+    "name": "IA",
+    "x": 1861,
+    "time": 6.92,
+    "won": false,
+    "is_ai": true,
+    "date": "2026-05-26 11:31"
+  },
+  {
+    "name": "IA",
+    "x": 1861,
+    "time": 6.86,
+    "won": false,
+    "is_ai": true,
+    "date": "2026-05-27 09:29"
+  },
+  {
+    "name": " IA",
+    "x": 1858,
+    "time": 6.69,
+    "won": false,
+    "is_ai": true,
+    "date": "2026-05-24 19:06"
+  },
+  {
+    "name": " IA",
+    "x": 1842,
+    "time": 7.24,
+    "won": false,
+    "is_ai": true,
+    "date": "2026-05-24 19:06"
+  },
+  {
+    "name": " IA",
+    "x": 1821,
+    "time": 5.48,
+    "won": false,
+    "is_ai": true,
+    "date": "2026-05-24 19:04"
+  },
+  {
+    "name": " IA",
+    "x": 1810,
+    "time": 5.38,
+    "won": false,
+    "is_ai": true,
+    "date": "2026-05-24 19:06"
+  },
+  {
+    "name": " IA",
+    "x": 1807,
+    "time": 6.96,
+    "won": false,
+    "is_ai": true,
+    "date": "2026-05-24 19:05"
+  },
+  {
+    "name": " IA",
+    "x": 1806,
+    "time": 7.22,
+    "won": false,
+    "is_ai": true,
+    "date": "2026-05-24 19:06"
+  },
+  {
+    "name": " IA",
+    "x": 843,
+    "time": 1.59,
+    "won": false,
+    "is_ai": true,
+    "date": "2026-05-24 19:07"
+  },
+  {
+    "name": " IA",
+    "x": 843,
+    "time": 1.58,
+    "won": false,
+    "is_ai": true,
+    "date": "2026-05-24 19:07"
+  },
+  {
+    "name": " IA",
+    "x": 843,
+    "time": 1.59,
+    "won": false,
+    "is_ai": true,
+    "date": "2026-05-24 19:07"
+  },
+  {
+    "name": " IA",
+    "x": 843,
+    "time": 1.59,
+    "won": false,
+    "is_ai": true,
+    "date": "2026-05-24 19:08"
+  },
+  {
+    "name": " IA",
+    "x": 843,
+    "time": 1.58,
+    "won": false,
+    "is_ai": true,
+    "date": "2026-05-24 19:08"
+  },
+  {
+    "name": " IA",
+    "x": 830,
+    "time": 1.78,
+    "won": false,
+    "is_ai": true,
+    "date": "2026-05-24 19:04"
+  },
+  {
+    "name": "IA",
+    "x": 824,
+    "time": 1.74,
+    "won": false,
+    "is_ai": true,
+    "date": "2026-05-26 08:44"
+  },
+  {
+    "name": "IA",
+    "x": 824,
+    "time": 1.75,
+    "won": false,
+    "is_ai": true,
+    "date": "2026-05-26 11:33"
+  },
+  {
+    "name": "IA",
+    "x": 824,
+    "time": 1.72,
+    "won": false,
+    "is_ai": true,
+    "date": "2026-05-27 09:29"
+  },
+  {
+    "name": " IA",
+    "x": 819,
+    "time": 1.89,
+    "won": false,
+    "is_ai": true,
+    "date": "2026-05-24 19:05"
+  },
+  {
+    "name": " IA",
+    "x": 816,
+    "time": 1.95,
+    "won": false,
+    "is_ai": true,
+    "date": "2026-05-24 19:04"
+  },
+  {
+    "name": " IA",
+    "x": 814,
+    "time": 1.99,
+    "won": false,
+    "is_ai": true,
+    "date": "2026-05-24 19:07"
+  },
+  {
+    "name": " IA",
+    "x": 805,
+    "time": 2.18,
+    "won": false,
+    "is_ai": true,
+    "date": "2026-05-24 19:05"
+  },
+  {
+    "name": " IA",
+    "x": 803,
+    "time": 2.2,
+    "won": false,
+    "is_ai": true,
+    "date": "2026-05-24 19:04"
+  },
+  {
+    "name": "IA",
+    "x": 802,
+    "time": 2.08,
+    "won": false,
+    "is_ai": true,
+    "date": "2026-05-26 08:44"
+  },
+  {
+    "name": "IA",
+    "x": 802,
+    "time": 2.08,
+    "won": false,
+    "is_ai": true,
+    "date": "2026-05-26 11:33"
+  },
+  {
+    "name": "IA",
+    "x": 802,
+    "time": 2.12,
+    "won": false,
+    "is_ai": true,
+    "date": "2026-05-27 08:16"
+  },
+  {
+    "name": "IA",
+    "x": 802,
+    "time": 2.1,
+    "won": false,
+    "is_ai": true,
+    "date": "2026-05-27 08:44"
+  },
+  {
+    "name": "IA",
+    "x": 802,
+    "time": 2.2,
+    "won": false,
+    "is_ai": true,
+    "date": "2026-05-27 08:45"
+  },
+  {
+    "name": "IA",
+    "x": 802,
+    "time": 2.08,
+    "won": false,
+    "is_ai": true,
+    "date": "2026-05-27 08:45"
+  },
+  {
+    "name": "IA",
+    "x": 802,
+    "time": 2.1,
+    "won": false,
+    "is_ai": true,
+    "date": "2026-05-27 09:29"
+  },
+  {
+    "name": " IA",
+    "x": 798,
+    "time": 2.04,
+    "won": false,
+    "is_ai": true,
+    "date": "2026-05-24 19:06"
+  },
+  {
+    "name": " IA",
+    "x": 791,
+    "time": 2.2,
+    "won": false,
+    "is_ai": true,
+    "date": "2026-05-24 19:03"
+  },
+  {
+    "name": " IA",
+    "x": 788,
+    "time": 2.23,
+    "won": false,
+    "is_ai": true,
+    "date": "2026-05-24 19:07"
+  },
+  {
+    "name": " IA",
+    "x": 768,
+    "time": 2.32,
+    "won": false,
+    "is_ai": true,
+    "date": "2026-05-24 19:06"
+  },
+  {
+    "name": "MAS",
+    "x": 759,
+    "time": 3.91,
+    "won": false,
+    "is_ai": false,
+    "date": "2026-05-26 08:48"
+  },
+  {
+    "name": " IA",
+    "x": 757,
+    "time": 2.57,
+    "won": false,
+    "is_ai": true,
+    "date": "2026-05-24 19:02"
+  },
+  {
+    "name": " IA",
+    "x": 754,
+    "time": 2.54,
+    "won": false,
+    "is_ai": true,
+    "date": "2026-05-24 19:04"
+  }
+]

@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<title>Mario RL — Leaderboard</title>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&family=VT323:wght@400&display=swap');
+
+  :root {
+    --bg:       #0a0a0f;
+    --surface:  #12121a;
+    --border:   #2a2a3a;
+    --gold:     #ffd700;
+    --silver:   #c0c0c0;
+    --bronze:   #cd7f32;
+    --human:    #00e5ff;
+    --ai:       #ff4081;
+    --green:    #69ff47;
+    --dim:      #555577;
+  }
+
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+
+  body {
+    background: var(--bg);
+    color: #fff;
+    font-family: 'VT323', monospace;
+    font-size: 22px;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 40px 20px;
+    background-image:
+      radial-gradient(ellipse at 20% 20%, rgba(0,229,255,0.04) 0%, transparent 60%),
+      radial-gradient(ellipse at 80% 80%, rgba(255,64,129,0.04) 0%, transparent 60%);
+  }
+
+  /* Scanlines overlay */
+  body::before {
+    content: '';
+    position: fixed;
+    inset: 0;
+    background: repeating-linear-gradient(
+      0deg,
+      transparent,
+      transparent 2px,
+      rgba(0,0,0,0.15) 2px,
+      rgba(0,0,0,0.15) 4px
+    );
+    pointer-events: none;
+    z-index: 999;
+  }
+
+  h1 {
+    font-family: 'Press Start 2P', monospace;
+    font-size: clamp(14px, 3vw, 22px);
+    color: var(--gold);
+    text-align: center;
+    text-shadow: 0 0 20px rgba(255,215,0,0.5), 3px 3px 0 #7a5f00;
+    margin-bottom: 8px;
+    letter-spacing: 2px;
+    animation: flicker 4s infinite;
+  }
+
+  @keyframes flicker {
+    0%,95%,100% { opacity: 1; }
+    96% { opacity: 0.8; }
+    97% { opacity: 1; }
+    98% { opacity: 0.7; }
+  }
+
+  .subtitle {
+    font-family: 'Press Start 2P', monospace;
+    font-size: 10px;
+    color: var(--dim);
+    margin-bottom: 40px;
+    letter-spacing: 1px;
+  }
+
+  .legend {
+    display: flex;
+    gap: 30px;
+    margin-bottom: 24px;
+    font-size: 20px;
+  }
+  .legend span { display: flex; align-items: center; gap: 8px; }
+  .dot { width: 12px; height: 12px; border-radius: 50%; display: inline-block; }
+  .dot.human { background: var(--human); box-shadow: 0 0 8px var(--human); }
+  .dot.ai    { background: var(--ai);    box-shadow: 0 0 8px var(--ai); }
+
+  table {
+    width: 100%;
+    max-width: 800px;
+    border-collapse: collapse;
+    background: var(--surface);
+    border: 1px solid var(--border);
+    box-shadow: 0 0 40px rgba(0,0,0,0.8);
+  }
+
+  thead tr {
+    background: #0d0d18;
+    border-bottom: 2px solid var(--border);
+  }
+
+  th {
+    font-family: 'Press Start 2P', monospace;
+    font-size: 9px;
+    color: var(--dim);
+    padding: 16px 20px;
+    text-align: left;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+  }
+
+  td {
+    padding: 14px 20px;
+    border-bottom: 1px solid var(--border);
+    transition: background 0.2s;
+  }
+
+  tr:hover td { background: rgba(255,255,255,0.03); }
+
+  tr:last-child td { border-bottom: none; }
+
+  .rank-1 td:first-child { color: var(--gold);   text-shadow: 0 0 10px var(--gold); }
+  .rank-2 td:first-child { color: var(--silver); text-shadow: 0 0 10px var(--silver); }
+  .rank-3 td:first-child { color: var(--bronze); text-shadow: 0 0 10px var(--bronze); }
+
+  .name-human { color: var(--human); text-shadow: 0 0 8px rgba(0,229,255,0.4); }
+  .name-ai    { color: var(--ai);    text-shadow: 0 0 8px rgba(255,64,129,0.4); }
+
+  .badge {
+    display: inline-block;
+    padding: 2px 10px;
+    border-radius: 2px;
+    font-size: 18px;
+  }
+  .badge.human { background: rgba(0,229,255,0.1); border: 1px solid var(--human); color: var(--human); }
+  .badge.ai    { background: rgba(255,64,129,0.1); border: 1px solid var(--ai);   color: var(--ai); }
+
+  .won  { color: var(--green); }
+  .lost { color: var(--dim); }
+
+  .bar-wrap {
+    width: 120px;
+    height: 8px;
+    background: var(--border);
+    border-radius: 4px;
+    overflow: hidden;
+    display: inline-block;
+    vertical-align: middle;
+    margin-left: 8px;
+  }
+  .bar-fill {
+    height: 100%;
+    border-radius: 4px;
+    transition: width 1s ease;
+  }
+  .bar-human { background: linear-gradient(90deg, var(--human), #006eff); }
+  .bar-ai    { background: linear-gradient(90deg, var(--ai), #ff9800); }
+
+  .empty {
+    text-align: center;
+    padding: 60px;
+    color: var(--dim);
+    font-family: 'Press Start 2P', monospace;
+    font-size: 11px;
+    line-height: 2;
+  }
+
+  .refresh-btn {
+    margin-top: 30px;
+    font-family: 'Press Start 2P', monospace;
+    font-size: 10px;
+    background: transparent;
+    border: 2px solid var(--border);
+    color: var(--dim);
+    padding: 12px 24px;
+    cursor: pointer;
+    letter-spacing: 1px;
+    transition: all 0.2s;
+  }
+  .refresh-btn:hover {
+    border-color: var(--gold);
+    color: var(--gold);
+    text-shadow: 0 0 8px var(--gold);
+  }
+
+  .date { color: var(--dim); font-size: 18px; }
+</style>
+</head>
+<body>
+
+<h1>🏆 LEADERBOARD</h1>
+<div class="subtitle">HUMANO vs IA — MARIO LEVEL 1</div>
+
+<div class="legend">
+  <span><span class="dot human"></span> Humano</span>
+  <span><span class="dot ai"></span> IA</span>
+</div>
+
+<table id="table">
+  <thead>
+    <tr>
+      <th>#</th>
+      <th>Nombre</th>
+      <th>Tipo</th>
+      <th>Posición X</th>
+      <th>Tiempo</th>
+      <th>Estado</th>
+      <th>Fecha</th>
+    </tr>
+  </thead>
+  <tbody id="tbody">
+    <tr><td colspan="7" class="empty">
+      Cargando scores...<br><br>
+      Abre este archivo desde la carpeta del repo
+    </td></tr>
+  </tbody>
+</table>
+
+<button class="refresh-btn" onclick="loadScores()">↺ ACTUALIZAR</button>
+
+<script>
+const MAX_X = 8505;
+
+async function loadScores() {
+  try {
+    const res = await fetch('leaderboard.json?t=' + Date.now());
+    if (!res.ok) throw new Error('No encontrado');
+    const scores = await res.json();
+    renderScores(scores);
+  } catch(e) {
+    document.getElementById('tbody').innerHTML = `
+      <tr><td colspan="7" class="empty">
+        No se encontró leaderboard.json<br><br>
+        Juega primero con mario_human.py o mario_watch.py
+      </td></tr>`;
+  }
+}
+
+function renderScores(scores) {
+  const tbody = document.getElementById('tbody');
+  if (!scores.length) {
+    tbody.innerHTML = '<tr><td colspan="7" class="empty">Sin scores todavía</td></tr>';
+    return;
+  }
+
+  tbody.innerHTML = scores.map((s, i) => {
+    const rankClass = i < 3 ? `rank-${i+1}` : '';
+    const nameClass = s.is_ai ? 'name-ai' : 'name-human';
+    const badgeClass = s.is_ai ? 'ai' : 'human';
+    const badgeLabel = s.is_ai ? '   IA' : '   HUM';
+    const estado = s.won
+      ? `<span class="won">✓ GANÓ</span>`
+      : `<span class="lost">✗ X=${s.x}</span>`;
+    const tiempo = s.won ? `${s.time.toFixed(1)}s` : '—';
+    const pct = Math.round((s.x / MAX_X) * 100);
+    const barClass = s.is_ai ? 'bar-ai' : 'bar-human';
+
+    return `<tr class="${rankClass}">
+      <td>${i === 0 ? '🥇' : i === 1 ? '🥈' : i === 2 ? '🥉' : i+1}</td>
+      <td class="${nameClass}">${s.name}</td>
+      <td><span class="badge ${badgeClass}">${badgeLabel}</span></td>
+      <td>
+        ${s.x}
+        <span class="bar-wrap"><span class="bar-fill ${barClass}" style="width:${pct}%"></span></span>
+      </td>
+      <td>${tiempo}</td>
+      <td>${estado}</td>
+      <td class="date">${s.date || '—'}</td>
+    </tr>`;
+  }).join('');
+}
+
+loadScores();
+setInterval(loadScores, 10000); // auto-refresh cada 10s
+</script>
+</body>
+</html>
